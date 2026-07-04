@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif}
+body{background:#080808;color:white}
+a{text-decoration:none;color:inherit}
+img{width:100%;display:block}
+.container{width:min(92%,1200px);margin:auto}
+
+/* HEADER */
+header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:#050505;border-bottom:1px solid rgba(255,255,255,.08)}
+header .container{height:88px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:34px;font-weight:900}
+.logo span{color:#ff6b00}
+nav{display:flex;gap:32px}
+nav a{font-weight:800}
+nav a:hover,nav a.active{color:#ff6b00}
+.btn-primary{background:#ff6b00;color:white;border:none;padding:16px 34px;border-radius:50px;font-weight:900}
+#menu-toggle{display:none}
+
+/* HERO */
+.locations-hero{padding:150px 0 70px;background:linear-gradient(135deg,#080808,#121212)}
+.locations-hero span{color:#ff6b00;font-weight:900;letter-spacing:3px}
+.locations-hero h1{font-size:58px;line-height:66px;margin:18px 0;max-width:780px}
+.locations-hero p{color:#cfcfcf;max-width:620px;line-height:32px;font-size:18px}
+
+/* SEARCH */
+.location-search{padding:35px 0;background:#0b0b0b}
+.search-box{max-width:760px;display:flex;gap:12px;background:#141414;padding:12px;border-radius:16px;border:1px solid rgba(255,255,255,.08)}
+.search-box i{color:#ff6b00;font-size:22px;align-self:center;margin-left:8px}
+.search-box input{flex:1;background:transparent;border:0;outline:0;color:white;padding:0 12px;font-size:16px}
+.search-box button{background:#ff6b00;color:white;border:0;border-radius:12px;padding:14px 28px;font-weight:900}
+
+/* TITLES */
+.section-title{text-align:center;margin-bottom:42px}
+.section-title span{color:#ff6b00;font-weight:900;letter-spacing:2px}
+.section-title h2{font-size:42px;margin:12px 0}
+.section-title p{color:#cfcfcf;max-width:650px;margin:auto;line-height:28px}
+
+/* SUCURSALES */
+.locations-clean{padding:80px 0;background:#080808}
+.locations-list{display:flex;flex-direction:column;gap:20px}
+.location-modern-card{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:24px;padding:26px;background:#141414;border:1px solid rgba(255,255,255,.08);border-radius:22px;transition:.3s}
+.location-modern-card:hover{transform:translateY(-6px);border-color:#ff6b00}
+.location-number{width:64px;height:64px;border-radius:18px;background:#ff6b00;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:900}
+.location-content h3{font-size:25px;margin-bottom:8px}
+.location-content p{color:#cfcfcf;margin-bottom:12px}
+.location-meta{display:flex;gap:18px;flex-wrap:wrap}
+.location-meta span{color:#aaa;font-size:14px}
+.location-meta i{color:#ff6b00;margin-right:6px}
+.location-btn{background:#ff6b00;color:white;padding:13px 24px;border-radius:14px;font-weight:900;white-space:nowrap}
+
+/* ESTADIOS */
+.stadiums-new{padding:80px 0;background:#0c0c0c}
+.baseball{background:#080808}
+.stadiums-new-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.stadium-new-card{min-height:240px;padding:28px;border-radius:22px;background:#141414;border:1px solid rgba(255,255,255,.08);transition:.3s;position:relative;overflow:hidden}
+.stadium-new-card::after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:rgba(255,107,0,.12);right:-35px;bottom:-35px}
+.stadium-new-card:hover{transform:translateY(-7px);border-color:#ff6b00}
+.stadium-city{display:inline-block;background:#ff6b00;padding:8px 15px;border-radius:50px;font-size:13px;font-weight:900;margin-bottom:18px}
+.stadium-new-card h3{font-size:23px;margin-bottom:12px}
+.stadium-new-card p{color:#cfcfcf;line-height:27px;margin-bottom:20px}
+.stadium-new-card a{color:#ff6b00;font-weight:900}
+
+/* MAPA */
+.map-section{padding:80px 0;background:#0c0c0c}
+.map-box{height:360px;border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.map-box iframe{width:100%;height:100%;border:0}
+
+/* HORARIOS */
+.hours-section{padding:80px 0;background:#080808}
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.hours-grid span{color:#ff6b00;font-weight:900;letter-spacing:2px}
+.hours-grid h2{font-size:42px;margin:12px 0}
+.hours-grid p{color:#cfcfcf;line-height:28px}
+.hours-card{background:#141414;border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:28px}
+.hours-card div{padding:15px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.hours-card div:last-child{border-bottom:0}
+
+/* CTA */
+.location-cta{padding:80px 0;background:#0c0c0c;text-align:center}
+.location-cta .container{background:#ff6b00;border-radius:24px;padding:55px 25px}
+.location-cta h2{font-size:40px;margin-bottom:15px}
+.location-cta p{margin-bottom:28px}
+
+/* FOOTER */
+footer{background:#050505;border-top:1px solid rgba(255,255,255,.08)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px;padding:55px 0}
+footer h2{font-size:34px}
+footer h2 span{color:#ff6b00}
+footer h3{margin-bottom:16px}
+footer p,footer li{color:#cfcfcf;line-height:28px}
+footer ul{list-style:none}
+.socials{display:flex;gap:12px}
+.socials a{width:42px;height:42px;border-radius:50%;background:#141414;display:flex;align-items:center;justify-content:center}
+.footer-bottom{text-align:center;padding:22px;border-top:1px solid rgba(255,255,255,.08);color:#aaa}
+
+/* MOBILE MENU */
+.mobile-menu{position:fixed;top:0;right:-100%;width:320px;max-width:90%;height:100vh;background:#0b0b0b;z-index:2000;display:flex;flex-direction:column;gap:22px;padding:100px 35px;transition:.35s}
+.mobile-menu.active{right:0}
+.mobile-menu a{font-size:20px;font-weight:800}
+.close-mobile{position:absolute;top:25px;right:25px;width:45px;height:45px;border-radius:50%;background:#ff6b00;color:white;border:0;font-size:20px}
+
+/* TOP */
+#topButton{position:fixed;right:25px;bottom:30px;width:55px;height:55px;border-radius:50%;background:#ff6b00;color:white;border:0;font-size:20px}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    nav{display:none}
+    #menu-toggle{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:14px;border:0;background:#ff6b00;color:white;font-size:20px}
+    .btn-primary{display:none}
+    .location-modern-card{grid-template-columns:1fr}
+    .location-btn{text-align:center}
+    .hours-grid,.footer-grid{grid-template-columns:1fr}
+    .locations-hero h1{font-size:40px;line-height:48px}
+}
+/* ===== NUEVO DISEÑO SUCURSALES ===== */
+
+.location-card{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:35px;
+    align-items:center;
+
+    margin:60px 0;
+    padding:35px;
+
+    background:#121212;
+    border-radius:28px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.location-map iframe{
+    width:100%;
+    height:360px;
+    border:0;
+    border-radius:20px;
+}
+
+.location-tag{
+    display:inline-block;
+    padding:8px 16px;
+    background:#ff6b00;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.location-info h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.location-info p{
+    color:#cfcfcf;
+    line-height:30px;
+    margin-bottom:25px;
+}
+
+.location-info ul{
+    list-style:none;
+}
+
+.location-info li{
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    margin-bottom:18px;
+    color:#ddd;
+    font-size:17px;
+}
+
+.location-info li i{
+    width:45px;
+    height:45px;
+    background:#ff6b00;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.location-btn{
+    display:inline-block;
+    margin-top:15px;
+
+    padding:15px 30px;
+
+    background:#ff6b00;
+    color:white;
+    border-radius:50px;
+    font-weight:800;
+}
+
+.location-btn:hover{
+    background:#ff8533;
+}
+
+@media(max-width:900px){
+
+    .location-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .location-info h2{
+
+        font-size:32px;
+
+    }
+
+}/* ===== ESTADIOS CON IMAGEN ===== */
+
+.stadiums-new-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:26px;
+}
+
+.stadium-photo-card{
+    background:#141414;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.stadium-photo-card:hover{
+    transform:translateY(-8px);
+    border-color:#ff6b00;
+}
+
+.stadium-photo-card img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+}
+
+.stadium-photo-info{
+    padding:25px;
+}
+
+.stadium-photo-info span{
+    color:#ffc857;
+    font-weight:900;
+    font-size:13px;
+}
+
+.stadium-photo-info h3{
+    font-size:24px;
+    margin:10px 0;
+}
+
+.stadium-photo-info p{
+    color:#cfcfcf;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+.stadium-photo-info a{
+    display:inline-block;
+    padding:12px 22px;
+    background:#ff6b00;
+    color:white;
+    border-radius:14px;
+    font-weight:900;
+}
+/* ===== HORARIOS Y FINAL UBICACIONES PRO ===== */
+
+.hours-pro{
+    padding:85px 0;
+    background:#080808;
+}
+
+.hours-pro-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:22px;
+}
+
+.hours-pro-grid article{
+    background:#141414;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.hours-pro-grid article:hover{
+    transform:translateY(-8px);
+    border-color:#ff6b00;
+}
+
+.hours-pro-grid i{
+    width:64px;
+    height:64px;
+    border-radius:18px;
+    background:#ff6b00;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+    margin:0 auto 20px;
+}
+
+.hours-pro-grid h3{
+    font-size:21px;
+    margin-bottom:10px;
+}
+
+.hours-pro-grid p{
+    color:#cfcfcf;
+    font-weight:700;
+}
+
+.location-final-cta{
+    padding:90px 0;
+    background:#0c0c0c;
+    text-align:center;
+}
+
+.location-final-cta .container{
+    background:
+    radial-gradient(circle at top right,rgba(255,255,255,.18),transparent 30%),
+    linear-gradient(135deg,#ff6b00,#ff3300);
+    border-radius:30px;
+    padding:65px 30px;
+}
+
+.location-final-cta span{
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.location-final-cta h2{
+    font-size:44px;
+    max-width:850px;
+    margin:14px auto;
+    line-height:52px;
+}
+
+.location-final-cta p{
+    max-width:650px;
+    margin:0 auto 30px;
+    line-height:30px;
+}
+
+.location-final-buttons{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:wrap;
+}
+
+.location-final-buttons a{
+    padding:15px 30px;
+    border-radius:50px;
+    background:white;
+    color:#111;
+    font-weight:900;
+}
+
+.location-final-buttons a:last-child{
+    background:#111;
+    color:white;
+}
+
+@media(max-width:700px){
+    .location-final-cta h2{
+        font-size:32px;
+        line-height:40px;
+    }
+}

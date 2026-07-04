@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    background:#080808;
+    color:white;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(92%,1200px);
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:#050505;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+header .container{
+    height:88px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:34px;
+    font-weight:900;
+}
+
+.logo span{
+    color:#ff6b00;
+}
+
+nav{
+    display:flex;
+    gap:34px;
+}
+
+nav a{
+    font-weight:800;
+}
+
+nav a:hover,
+nav a.active{
+    color:#ff6b00;
+}
+
+.btn-primary{
+    background:#ff6b00;
+    color:white;
+    border:none;
+    padding:16px 34px;
+    border-radius:50px;
+    font-weight:900;
+}
+
+#menu-toggle{
+    display:none;
+}
+
+/* HERO */
+
+.contact-hero{
+    padding:150px 0 60px;
+    background:
+    radial-gradient(circle at top right,rgba(255,107,0,.22),transparent 35%),
+    linear-gradient(135deg,#080808,#111);
+}
+
+.contact-hero span{
+    color:#ff6b00;
+    font-weight:900;
+    letter-spacing:3px;
+}
+
+.contact-hero h1{
+    font-size:58px;
+    line-height:66px;
+    margin:18px 0;
+}
+
+.contact-hero p{
+    max-width:650px;
+    color:#cfcfcf;
+    font-size:18px;
+    line-height:32px;
+}
+
+/* INFO */
+
+.contact-info-section{
+    padding:45px 0;
+}
+
+.contact-info-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.contact-info-card{
+    background:#141414;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    padding:30px;
+}
+
+.contact-info-card i{
+    width:58px;
+    height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:16px;
+    background:#ff6b00;
+    font-size:24px;
+    margin-bottom:18px;
+}
+
+.contact-info-card h3{
+    font-size:24px;
+    margin-bottom:8px;
+}
+
+.contact-info-card p{
+    color:#cfcfcf;
+}
+
+/* MAIN */
+
+.contact-main{
+    padding:55px 0;
+}
+
+.contact-layout{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:28px;
+}
+
+.contact-form-box,
+.contact-social-box{
+    background:#141414;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    padding:38px;
+}
+
+.contact-form-box span,
+.contact-social-box span{
+    color:#ff6b00;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.contact-form-box h2,
+.contact-social-box h2{
+    font-size:36px;
+    margin:14px 0;
+}
+
+.contact-form-box p,
+.contact-social-box p{
+    color:#cfcfcf;
+    line-height:30px;
+    margin-bottom:26px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:17px 18px;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.1);
+    background:#090909;
+    color:white;
+    outline:none;
+    font-size:15px;
+}
+
+.form-group textarea{
+    height:140px;
+    resize:none;
+}
+
+.contact-form-box button{
+    width:100%;
+    padding:17px;
+    border-radius:15px;
+    border:none;
+    background:#ff6b00;
+    color:white;
+    font-weight:900;
+    font-size:16px;
+}
+
+/* REDES */
+
+.contact-social-list{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.contact-social-list a{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:17px;
+    border-radius:16px;
+    background:#090909;
+    border:1px solid rgba(255,255,255,.08);
+    font-weight:800;
+}
+
+.contact-social-list a:hover{
+    background:#ff6b00;
+}
+
+.contact-social-list i{
+    font-size:24px;
+}
+
+/* MAP */
+
+.contact-map{
+    padding:55px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-title span{
+    color:#ff6b00;
+    font-weight:900;
+}
+
+.section-title h2{
+    font-size:42px;
+    margin:12px 0;
+}
+
+.section-title p{
+    color:#cfcfcf;
+}
+
+.map-container{
+    height:330px;
+    border-radius:24px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.map-container iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:50px;
+    background:#050505;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
+    padding:55px 0;
+}
+
+footer h2{
+    font-size:34px;
+}
+
+footer h2 span{
+    color:#ff6b00;
+}
+
+footer h3{
+    margin-bottom:16px;
+}
+
+footer p,
+footer li{
+    color:#cfcfcf;
+    line-height:28px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+.footer-bottom{
+    text-align:center;
+    padding:22px;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:#aaa;
+}
+
+/* WHATSAPP */
+
+.floating-whatsapp{
+    position:fixed;
+    right:24px;
+    bottom:28px;
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    z-index:1000;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:320px;
+    max-width:90%;
+    height:100vh;
+    background:#0b0b0b;
+    z-index:2000;
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    padding:100px 35px;
+    transition:.35s;
+}
+
+.mobile-menu.active{
+    right:0;
+}
+
+.mobile-menu a{
+    font-size:20px;
+    font-weight:800;
+}
+
+.close-mobile{
+    position:absolute;
+    top:25px;
+    right:25px;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#ff6b00;
+    color:white;
+    border:none;
+    font-size:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+    nav{
+        display:none;
+    }
+
+    #menu-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:48px;
+        height:48px;
+        border-radius:14px;
+        border:none;
+        background:#ff6b00;
+        color:white;
+        font-size:20px;
+    }
+
+    .btn-primary{
+        display:none;
+    }
+
+    .contact-info-grid,
+    .contact-layout,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-hero h1{
+        font-size:40px;
+        line-height:48px;
+    }
+}
